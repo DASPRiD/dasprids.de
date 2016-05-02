@@ -1,0 +1,29 @@
+{
+    "name": "dasprid/dasprids.de",
+    "type": "project",
+    "homepage": "https://github.com/dasprid/dasprids.de",
+    "license": "BSD-3-CLAUSE",
+    "authors": [
+        {
+            "name": "Ben Scholzen 'DASPRiD'",
+            "homepage": "https://dasprids.de/"
+        }
+    ],
+    "require": {
+        "mnapoli/front-yaml": "^1.5",
+        "twig/twig": "^1.24",
+        "michelf/php-markdown": "^1.6",
+        "bacon/bacon-string-utils": "^1.0",
+        "twig/extensions": "^1.3",
+        "zendframework/zend-servicemanager": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Staphp\\": "src/"
+        }
+    },
+    "scripts": {
+        "compile": "php staphp.php",
+        "serve": "php -S 0.0.0.0:8080 -t dist/"
+    }
+}

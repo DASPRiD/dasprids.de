@@ -1,0 +1,31 @@
+<ul class="post-list">
+    {% for post in pagination.items %}
+        <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <header>
+                <a href="{{ post.url }}" itemprop="url"><h1 itemprop="name headline">{{ post.title }}</h1></a>
+                <p><time datetime="{{ post.date | date(constant('DateTime::W3C')) }}" itemprop="datePublished">{{ post.date | localizeddate('full', 'none', 'en-US') }}</time></p>
+            </header>
+            {% if post.metaData.description %}
+                <p itemprop="description">
+                    {{ post.metaData.description }}
+                </p>
+            {% endif %}
+            {% include "layout/partial/tags.twig" with {tags: post.tags} %}
+        </li>
+    {% endfor %}
+</ul>
+
+<nav>
+    <ul class="pager">
+        {% if pagination.hasPreviousPageUrl %}
+            <li class="previous"><a href="{{ pagination.previousPageUrl }}"><span aria-hidden="true">&larr;</span> Previous</a></li>
+        {% else %}
+            <li class="previous disabled"><span><span aria-hidden="true">&larr;</span> Previous</span></li>
+        {% endif %}
+        {% if pagination.hasNextPageUrl %}
+            <li class="next"><a href="{{ pagination.nextPageUrl }}">Next <span aria-hidden="true">&rarr;</span></a></li>
+        {% else %}
+            <li class="next"><span>Next <span aria-hidden="true">&rarr;</span></span></li>
+        {% endif %}
+    </ul>
+</nav>

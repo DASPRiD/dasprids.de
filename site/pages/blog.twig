@@ -1,0 +1,10 @@
+{% extends 'layout/default.twig' %}
+
+{% block content %}
+    <section itemscope itemtype="http://schema.org/Blog">
+        <h1 class="page-header" itemprop="name">Blog</h1>
+
+        {% set pagination = paginate(posts) %}
+        {% include 'layout/partial/post-list.twig' with {posts: pagination.items} %}
+    </section>
+{% endblock %}

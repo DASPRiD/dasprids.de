@@ -1,0 +1,8 @@
+{% set tagLabels = [] %}
+<ul class="tags">
+    {% for tag in tags %}
+        <li><a href="{{ tag.url }}">{{ tag.label }}</a></li>
+        {% set tagLabels = tagLabels | merge([tag.label]) %}
+    {% endfor %}
+</ul>
+<meta itemprop="keywords" content="{{ tagLabels | join(', ') }}">
