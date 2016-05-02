@@ -326,16 +326,6 @@ body > footer .copyright {
     color: #5ba02a;
 }
 
-/* Tags */
-.tags {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 0 0 1.3em;
-
-    background: url('../images/tags.svg') no-repeat left center;
-    background-size: 1em 1em;
-}
-
 /* Post */
 .post > footer {
     padding-top: 1em;
@@ -362,6 +352,15 @@ body > footer .copyright {
 }
 
 /* Tags */
+.tags {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 1.3em;
+
+    background: url('../images/tags.svg') no-repeat left center;
+    background-size: 1em 1em;
+}
+
 .tags > li {
     display: inline;
 }
@@ -372,6 +371,85 @@ body > footer .copyright {
 
 .tags > li:last-child:after {
     content: '';
+}
+
+/* Panels */
+.panel-default {
+    border-color: #080808;
+}
+
+.panel-default > .panel-heading {
+    background-image: linear-gradient(to bottom, #3c3c3c, #222222);
+    border-color: #080808;
+    color: #9d9d9d;
+    border-radius: 0;
+}
+/*
+.archive {
+    list-style-type: none;
+    margin: 0 0 -6px 0;
+    padding: 0;
+}
+
+.archive > li {
+    display: inline-block;
+}
+*/
+/* Tag cloud */
+.archive {
+    list-style-type: none;
+    margin: 0 0 -6px 0;
+    padding: 0;
+}
+
+.archive > li {
+    display: inline-block;
+}
+
+.archive > li > a {
+    position: relative;
+
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 5px 0 0 5px;
+    padding: 0.25em 0.5em;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+    color: #333333;
+
+    background-image: linear-gradient(to bottom, #fcfcfc, #f0f0f0);
+}
+
+.archive > li > a:hover {
+    text-decoration: none;
+}
+
+.archive > li > a:after {
+    content: attr(data-posts);
+
+    position: absolute;
+    z-index: 2;
+    left: 100%;
+    top: -1px;
+    padding: 0.25em 0 0.25em 4px;
+    overflow: hidden;
+    max-width: 0;
+
+    background: linear-gradient(to bottom, #c3e280, #5ea352) no-repeat;
+    font-size: 12px;
+    border: 1px solid #5ba02a;
+    border-radius: 0 5px 5px 0;
+    color: #ffffff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s ease-out;
+    transition-property: padding, max-width;
+}
+
+.archive > li > a:hover:after {
+    padding: 0.25em 0.5em;
+    max-width: 50px;
 }
 
 /* Disqus */
