@@ -1,0 +1,9 @@
+#!/bin/bash
+
+DEPLOY_USER="username"
+DEPLOY_HOST="hostname"
+DEPLOY_PATH="/path/to/website/"
+
+cd "${0%/*}"
+composer compile
+rsync -avz --progress dist/* "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
