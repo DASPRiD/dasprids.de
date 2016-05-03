@@ -54,6 +54,7 @@ class PostCollector
 
             $document = $parser->parse(file_get_contents($fileInfo->getPathname()));
             $postData = $document->getYAML();
+            $content = $markdown->transform($document->getContent());
 
             if (!array_key_exists('title', $postData)) {
                 throw new DomainException(sprintf('Missing "title" front matter in "%s"', $fileInfo->getPathname()));
@@ -89,6 +90,13 @@ class PostCollector
             $title = $postData['title'];
             unset($postData['title']);
 
+            if (array_key_exists('description', $postData)) {
+                $description = $postData['description'];
+                unset($postData['description']);
+            } else {
+                $description = substr(strip_tags($content), 0, 50) . '…';
+            }
+
             if (array_key_exists('slug', $postData)) {
                 $slug = $postData['slug'];
                 unset($postData['slug']);
@@ -104,7 +112,8 @@ class PostCollector
                 $title,
                 $date,
                 $this->blogUrl . '/' . $date->format('Y/m/d') . '/' . $slug . '/',
-                $markdown->transform($document->getContent()),
+                $description,
+                $content,
                 $postTags,
                 $postData
             );

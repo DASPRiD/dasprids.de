@@ -15,7 +15,8 @@
         "michelf/php-markdown": "^1.6",
         "bacon/bacon-string-utils": "^1.0",
         "twig/extensions": "^1.3",
-        "zendframework/zend-servicemanager": "^3.0"
+        "zendframework/zend-servicemanager": "^3.0",
+        "zendframework/zend-feed": "^2.7"
     },
     "autoload": {
         "psr-4": {

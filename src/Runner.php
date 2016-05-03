@@ -160,7 +160,7 @@ class Runner
 
             $targetUrl = preg_replace(
                 '(^' . preg_quote($this->sitePath) . '/pages(/.*?)\.twig$)',
-                '\1/',
+                '\1',
                 $fileInfo->getPathname()
             );
             $templatePath = preg_replace(

@@ -25,6 +25,11 @@ class Post
     /**
      * @var string
      */
+    private $description;
+
+    /**
+     * @var string
+     */
     private $content;
 
     /**
@@ -41,6 +46,7 @@ class Post
         string $title,
         DateTimeImmutable $date,
         string $url,
+        string $description,
         string $content,
         TagCollection $tags,
         array $metaData
@@ -48,6 +54,7 @@ class Post
         $this->title = $title;
         $this->date = $date;
         $this->url = $url;
+        $this->description = $description;
         $this->content = $content;
         $this->tags = $tags;
         $this->metaData = $metaData;
@@ -66,6 +73,11 @@ class Post
     public function getUrl() : string
     {
         return $this->url;
+    }
+
+    public function getDescription() : string
+    {
+        return $this->description;
     }
 
     public function getContent() : string

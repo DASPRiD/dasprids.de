@@ -5,11 +5,9 @@
                 <a href="{{ post.url }}" itemprop="url"><h1 itemprop="name headline">{{ post.title }}</h1></a>
                 <p><time datetime="{{ post.date | date(constant('DateTime::W3C')) }}" itemprop="datePublished">{{ post.date | localizeddate('full', 'none', 'en-US') }}</time></p>
             </header>
-            {% if post.metaData.description %}
-                <p itemprop="description">
-                    {{ post.metaData.description }}
-                </p>
-            {% endif %}
+            <p itemprop="description">
+                {{ post.description }}
+            </p>
             {% include "layout/partial/tags.twig" with {tags: post.tags} %}
         </li>
     {% endfor %}

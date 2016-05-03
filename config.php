@@ -6,8 +6,17 @@ return [
     'server_url' => 'https://dasprids.de',
     'time_zone' => 'Europe/Berlin',
 
+    'rss' => [
+        'author' => [
+            'name' =>'Ben Scholzen \'DASPRiD\'',
+            'email' => 'mail@dasprids.de',
+            'uri' => 'https://dasprids.de'
+        ],
+    ],
+
     'twig' => [
         'filters' => [
+            'rss' => Staphp\Filter\RssFilter::class,
             'serverurl' => Staphp\Filter\ServerUrlFilter::class,
         ],
         'functions' => [
@@ -17,6 +26,7 @@ return [
 
     'dependencies' => [
         'factories' => [
+            Staphp\Filter\RssFilter::class => Staphp\Factory\Filter\RssFilterFactory::class,
             Staphp\Filter\ServerUrlFilter::class => Staphp\Factory\Filter\ServerUrlFilterFactory::class,
             Staphp\Post\PostCollector::class => Staphp\Factory\Post\PostCollectorFactory::class,
             DateTimeZone::class => Staphp\Factory\DateTimeZoneFactory::class,

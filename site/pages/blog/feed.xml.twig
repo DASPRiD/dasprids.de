@@ -1,0 +1,6 @@
+{{ posts.splice(0, 10) | rss(
+    'DASPRiD\'s Blog',
+    'Latest posts about recent development topics',
+    '/blog/' | serverurl,
+    '/blog/feed.xml' | serverurl
+) | raw }}

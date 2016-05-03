@@ -20,7 +20,7 @@ class Paginator
 
     public function setBaseUrl(string $baseUrl)
     {
-        $this->baseUrl = $baseUrl;
+        $this->baseUrl = preg_replace('(/[^/]*$)', '/', $baseUrl);
     }
 
     public function hasPagination() : bool

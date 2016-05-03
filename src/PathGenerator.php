@@ -17,6 +17,10 @@ class PathGenerator
 
     public function generatePath(string $url) : string
     {
-        return $this->distPath . '/' . trim($url, '/') . '/index.html';
+        if (preg_match('(/$)', $url)) {
+            $url .= 'index.html';
+        }
+
+        return $this->distPath . '/' . trim($url, '/');
     }
 }
