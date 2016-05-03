@@ -1,4 +1,5 @@
 ---
+id: 44371fd1-6298-4ca6-8a61-e9b845073864
 title: Zend Framework 1.8.0 released
 date: 2009-05-01 13:02:19 +0200
 tags: [Zend Framework]

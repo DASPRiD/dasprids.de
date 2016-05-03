@@ -1,4 +1,5 @@
 ---
+id: 7287b075-2ada-433e-9dc4-e2c00fdb01ee
 title: Zend Framework 1.6 is out!
 date: 2008-09-03 14:25:58 +0200
 tags: [Zend Framework]

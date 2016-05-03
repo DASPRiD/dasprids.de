@@ -1,4 +1,5 @@
 ---
+id: 487549d8-c4c1-4299-8ef4-60d94947c9e8
 title: Zend_Console_ProgessBar in Incubator
 date: 2008-08-19 18:43:15 +0200
 tags: [Zend Framework]

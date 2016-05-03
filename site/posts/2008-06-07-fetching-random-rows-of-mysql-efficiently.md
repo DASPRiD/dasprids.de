@@ -1,4 +1,5 @@
 ---
+id: 5bc76767-88de-4404-af78-ca339d31954b
 title: Fetching random rows of MySQL efficiently
 date: 2008-06-07 03:35:11 +0200
 tags: [MySQL]

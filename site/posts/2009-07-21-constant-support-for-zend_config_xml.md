@@ -1,4 +1,5 @@
 ---
+id: 1920d823-324b-40c7-b73d-99b93fe94eae
 title: Constant support for Zend_Config_Xml
 date: 2009-07-21 23:36:57 +0200
 tags: [Zend Framework, PHP, XML]

@@ -1,4 +1,5 @@
 ---
+id: 8b45f27f-8535-491d-b3c9-dc184b4c335a
 title: Firefox 3 Final is out!
 date: 2008-06-18 00:50:58 +0200
 tags: []

@@ -1,4 +1,5 @@
 ---
+id: a6868f62-c9c9-404f-a4b3-46f0998d3c2f
 title: Tri-Display on Linux with nvidia
 date: 2008-12-15 11:18:44 +0100
 tags: [PC setup]

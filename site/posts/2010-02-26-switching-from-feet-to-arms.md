@@ -1,4 +1,5 @@
 ---
+id: f4c3f599-3769-446e-8580-69b144699a7c
 title: Switching from feet to arms
 date: 2010-02-26 00:12:53 +0100
 tags: [PC setup]

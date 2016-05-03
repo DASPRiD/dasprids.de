@@ -1,5 +1,5 @@
 ---
-id: 2008-11-21-zend-framework-1-7-1-comming-quickly
+id: ef1afda7-0d0f-45be-8847-58fc795062c3
 title: Zend Framework 1.7.1 coming quickly
 date: 2008-11-21 14:34:23 +0100
 tags: [Zend Framework]

@@ -1,4 +1,5 @@
 ---
+id: cdc988db-a22d-4d6a-a6a8-7352cf70f97d
 title: Another year is ending ...
 date: 2007-12-25 23:59:02 +0100
 tags: []

@@ -1,4 +1,5 @@
 ---
+id: 5b2fbd5e-f0aa-40ce-9329-2e2be759d7fc
 title: ZendCon08 résumé
 date: 2008-09-20 00:20:25 +0200
 tags: [ZendCon]

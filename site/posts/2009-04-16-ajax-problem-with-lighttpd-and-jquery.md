@@ -1,4 +1,5 @@
 ---
+id: eea874c3-aca9-40cb-af58-c8c8a30bede1
 title: AJAX problem with Lighttpd and jQuery
 date: 2009-04-16 17:22:00 +0200
 tags: [JavaScript, Webserver]

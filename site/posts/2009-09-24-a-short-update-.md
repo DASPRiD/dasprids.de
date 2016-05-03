@@ -1,4 +1,5 @@
 ---
+id: 5a444d39-c8f3-4763-88ac-5b77e14ca3fe
 title: A short update …
 date: 2009-09-24 23:43:17 +0200
 tags: [Zend Framework, PHP, ZendCon]

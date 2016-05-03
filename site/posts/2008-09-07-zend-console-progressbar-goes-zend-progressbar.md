@@ -1,4 +1,5 @@
 ---
+id: 6b0c593d-636c-4617-8139-6f376ca5cbe4
 title: Zend_Console_Progressbar goes Zend_ProgressBar
 date: 2008-09-07 17:16:08 +0200
 tags: [Zend Framework]

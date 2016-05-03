@@ -1,4 +1,5 @@
 ---
+id: b9cecc2e-ec97-4d01-8653-08a9341eaea5
 title: Zend Framework 1.8 preview release
 date: 2009-04-08 14:27:29 +0200
 tags: [Zend Framework]

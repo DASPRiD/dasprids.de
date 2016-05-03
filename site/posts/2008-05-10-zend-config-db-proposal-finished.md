@@ -1,4 +1,5 @@
 ---
+id: ef5fdff1-ba0b-44e4-bc20-b0adab2778f1
 title: Zend_Config_Db Proposal finished
 date: 2008-05-10 23:20:44 +0200
 tags: [Zend Framework]

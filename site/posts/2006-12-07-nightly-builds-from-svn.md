@@ -1,4 +1,5 @@
 ---
+id: 0660d9cb-dc5c-4f7c-a912-48185dac54e5
 title: Nightly builds from SVN
 date: 2006-12-07 23:28:19 +0100
 tags: [Tremstats]

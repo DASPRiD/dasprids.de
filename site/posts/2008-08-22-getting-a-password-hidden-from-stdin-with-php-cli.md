@@ -1,4 +1,5 @@
 ---
+id: d2d284e3-6c9d-420d-8c85-b9a4f2b12ee0
 title: Getting a password hidden from STDIN with PHP-CLI
 date: 2008-08-22 23:03:28 +0200
 tags: [PHP]

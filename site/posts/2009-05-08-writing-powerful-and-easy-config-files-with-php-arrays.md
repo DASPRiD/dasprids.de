@@ -1,4 +1,5 @@
 ---
+id: 604d648b-9ffb-48e5-aa22-e986b949ceed
 title: Writing powerful and easy config files with PHP-arrays
 date: 2009-05-08 11:20:59 +0200
 tags: [Zend Framework, PHP]

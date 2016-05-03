@@ -1,4 +1,5 @@
 ---
+id: b03406bd-242b-4799-a8c4-0248833a06b8
 title: Zend_Text_Figlet and Zend_Text_Ascii moved to Incubator
 date: 2008-06-19 20:08:06 +0200
 tags: [Zend Framework]

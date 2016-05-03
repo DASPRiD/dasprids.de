@@ -1,4 +1,5 @@
 ---
+id: 824331af-af55-4dea-86e7-a9c137aaaeaa
 title: About {@inheritDoc} and other useless documentation
 date: 2013-10-28 01:33:52 +0100
 tags: [PHP]

@@ -1,4 +1,5 @@
 ---
+id: 9224256d-5ed9-45f9-ab44-82d560defc03
 title: Next project follows
 date: 2007-07-22 20:43:12 +0200
 tags: [Python]

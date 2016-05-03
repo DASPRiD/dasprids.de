@@ -1,4 +1,5 @@
 ---
+id: dc6bf14b-dbc5-4c7b-88af-73868bf5409d
 title: Zend_Text_Filget presentation (found again)
 date: 2009-04-07 23:48:37 +0200
 tags: [Zend Framework, Presentation]

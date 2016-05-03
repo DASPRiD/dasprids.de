@@ -1,4 +1,5 @@
 ---
+id: 70193a9a-507a-4f45-9a6c-56a4d7c274de
 title: Webcam online again
 date: 2007-08-02 22:52:57 +0200
 tags: [Site]

@@ -1,4 +1,5 @@
 ---
+id: db6714ef-1f7f-4476-b88d-cc788ac68f76
 title: From forum search to site search
 date: 2007-11-13 23:49:11 +0100
 tags: [Site]

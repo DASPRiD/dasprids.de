@@ -1,4 +1,5 @@
 ---
+id: d4414bba-e2a2-4140-a526-848cbbb47ef7
 title: Python, MySQLdb and UTF-8
 date: 2007-12-17 12:40:30 +0100
 tags: [Python, MySQL]

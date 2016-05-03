@@ -1,4 +1,5 @@
 ---
+id: 38c59ec9-8e45-40e3-8946-5bb850607521
 title: A short status update about Zend Framework 3
 date: 2014-04-01 00:00:00 +0200
 tags: [Zend Framework, PHP]

@@ -1,4 +1,5 @@
 ---
+id: 47d1ae49-0c28-4b32-8e96-76b02aa74a9c
 title: Weird date problems
 date: 2008-01-12 22:13:07 +0100
 tags: [Zend Framework, Site]

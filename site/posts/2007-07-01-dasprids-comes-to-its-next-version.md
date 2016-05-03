@@ -1,4 +1,5 @@
 ---
+id: 17c4202b-2da3-42e3-a9d0-fb1c13ca296a
 title: DASPRiD's comes to it's next version!
 date: 2007-07-01 19:35:28 +0200
 tags: [Site]

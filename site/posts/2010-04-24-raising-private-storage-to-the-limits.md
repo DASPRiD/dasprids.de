@@ -1,4 +1,5 @@
 ---
+id: dbdc06d9-fb46-48b2-a001-5c21cdcf377b
 title: Raising private storage to the limits
 date: 2010-04-24 16:10:56 +0200
 tags: [PC setup]

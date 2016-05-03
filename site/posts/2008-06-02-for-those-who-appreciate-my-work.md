@@ -1,4 +1,5 @@
 ---
+id: e6ba9b46-5470-4022-b1c4-7ca595bd42cd
 title: For those who appreciate my work
 date: 2008-06-02 22:51:37 +0200
 tags: []

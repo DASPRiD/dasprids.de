@@ -1,4 +1,5 @@
 ---
+id: 3b7512fb-c3a9-45fb-a8ac-1c4b94d7f3d7
 title: 'Zend_Ical: Initial SVN import'
 date: 2007-09-24 13:19:33 +0200
 tags: [Zend Framework]

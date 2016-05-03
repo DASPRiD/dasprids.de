@@ -1,4 +1,5 @@
 ---
+id: 8dc4300c-b9ae-4546-b77d-9e30d8ff9f8a
 title: State comments to the projects!
 date: 2006-11-07 01:00:23 +0100
 tags: [Site]

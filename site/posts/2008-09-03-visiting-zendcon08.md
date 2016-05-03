@@ -1,4 +1,5 @@
 ---
+id: c509ddc3-d091-432c-a7ff-feeda45554ba
 title: Visiting ZendCon08
 date: 2008-09-03 03:11:07 +0200
 tags: [ZendCon]

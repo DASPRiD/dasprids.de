@@ -1,4 +1,5 @@
 ---
+id: 58a3584a-949b-41ea-b6ba-8419c151e5a4
 title: Zend\Ical – A long term journey
 date: 2011-08-31 18:00:54 +0200
 tags: [Zend Framework]

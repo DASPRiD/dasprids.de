@@ -1,4 +1,5 @@
 ---
+id: eaa5a19b-97cd-4b46-8b8a-7470c2b7ecbd
 title: Zend_Config_Xml and the Incubator
 date: 2008-06-10 12:05:02 +0200
 tags: [Zend Framework]

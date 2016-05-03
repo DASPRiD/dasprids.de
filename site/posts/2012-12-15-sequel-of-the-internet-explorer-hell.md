@@ -1,4 +1,5 @@
 ---
+id: 9e9e0fac-2814-4c44-9b32-33ba38dd23d1
 title: Sequel of the Internet Explorer hell
 date: 2012-12-15 23:02:09 +0100
 tags: [CSS, Android]

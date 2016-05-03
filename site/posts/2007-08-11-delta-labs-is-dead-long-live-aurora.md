@@ -1,4 +1,5 @@
 ---
+id: e602d999-9399-4f61-92a3-25120061b611
 title: Delta Labs is dead, long live Aurora!
 date: 2007-08-11 14:51:27 +0200
 tags: [Level Design]

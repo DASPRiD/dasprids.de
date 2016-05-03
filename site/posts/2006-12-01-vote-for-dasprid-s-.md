@@ -1,4 +1,5 @@
 ---
+id: c9722b48-1444-4a2b-a232-501625a599b0
 title: Vote for DASPRiD's!
 date: 2006-12-01 00:15:55 +0100
 tags: [Site]

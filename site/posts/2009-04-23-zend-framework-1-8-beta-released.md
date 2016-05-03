@@ -1,4 +1,5 @@
 ---
+id: 7086a616-de68-430a-8cf0-428d05bc8ca0
 title: Zend Framework 1.8 beta released
 date: 2009-04-23 18:24:49 +0200
 tags: [Zend Framework]

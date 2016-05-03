@@ -1,4 +1,5 @@
 ---
+id: 04bc9488-186f-44c1-a0ba-1de75a8b1b9a
 title: Webcam online
 date: 2006-12-22 11:28:17 +0100
 tags: [Site]

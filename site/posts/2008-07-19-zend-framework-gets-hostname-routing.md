@@ -1,4 +1,5 @@
 ---
+id: 42e9e1e0-9638-4fc0-aa9f-0852945e41bb
 title: Zend Framework gets hostname routing
 date: 2008-07-19 13:43:36 +0200
 tags: [Zend Framework]

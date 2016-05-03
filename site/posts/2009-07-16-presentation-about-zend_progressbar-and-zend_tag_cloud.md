@@ -1,4 +1,5 @@
 ---
+id: 611ad9ab-5ecb-41b2-b408-b828b657989b
 title: Presentation about Zend_ProgressBar and Zend_Tag_Cloud
 date: 2009-07-16 22:01:37 +0200
 tags: [Zend Framework, PHP, Presentation]

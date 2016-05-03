@@ -1,4 +1,5 @@
 ---
+id: 74e6c55f-a2a3-4e3b-9c02-19fe02e4db1a
 title: Zend_Config_Xml and Zend_Text_Figlet promoted to trunk
 date: 2008-07-20 16:54:07 +0200
 tags: [Zend Framework]

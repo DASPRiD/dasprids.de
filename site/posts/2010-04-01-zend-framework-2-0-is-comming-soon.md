@@ -1,4 +1,5 @@
 ---
+id: a77b20b2-3b35-4637-b295-23d4adb8b550
 title: Zend Framework 2.0 is comming soon
 date: 2010-04-01 10:07:06 +0200
 tags: [Zend Framework, PHP]

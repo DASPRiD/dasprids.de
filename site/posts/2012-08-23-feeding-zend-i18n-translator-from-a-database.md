@@ -1,4 +1,5 @@
 ---
+id: a2137bd2-7a55-4d13-9880-0dabd66a8e6d
 title: Feeding Zend\I18n\Translator from a database
 date: 2012-08-23 14:21:24 +0200
 tags: [Zend Framework, i18n]

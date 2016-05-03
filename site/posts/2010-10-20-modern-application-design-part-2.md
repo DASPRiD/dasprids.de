@@ -1,4 +1,5 @@
 ---
+id: 66682216-11c8-4cd6-9bad-e0f1043fe417
 title: Modern Application Design - Part 2
 date: 2010-10-20 10:48:40 +0200
 tags: [Zend Framework, PHP, Best practices]

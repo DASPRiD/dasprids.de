@@ -1,4 +1,5 @@
 ---
+id: ccc62eea-9509-4280-a80b-51c74640eed1
 title: Good old times
 date: 2007-11-20 01:56:25 +0100
 tags: []

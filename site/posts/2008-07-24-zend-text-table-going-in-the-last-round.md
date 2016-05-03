@@ -1,4 +1,5 @@
 ---
+id: efe0dc8e-7194-4f15-bcfb-5704f5e2afea
 title: Zend_Text_Table going in the last round
 date: 2008-07-24 02:19:57 +0200
 tags: [Zend Framework]

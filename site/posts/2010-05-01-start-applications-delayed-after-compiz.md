@@ -1,4 +1,5 @@
 ---
+id: 06052a85-0fa2-4633-b769-cb0cb101cb9f
 title: Start applications delayed after compiz
 date: 2010-05-01 19:38:25 +0200
 tags: [Bash]

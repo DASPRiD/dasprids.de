@@ -1,4 +1,5 @@
 ---
+id: 459ad827-7809-404a-b1d5-f77dea98e72b
 title: Hostname route and Zend_Config
 date: 2008-10-17 00:35:04 +0200
 tags: [Zend Framework]

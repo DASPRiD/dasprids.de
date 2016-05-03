@@ -1,4 +1,5 @@
 ---
+id: 76e3be36-4499-4ea6-af55-2423a32d0dec
 title: Pidgin Status Switcher
 date: 2008-06-28 14:39:03 +0200
 tags: [Python]

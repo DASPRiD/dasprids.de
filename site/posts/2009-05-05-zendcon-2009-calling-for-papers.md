@@ -1,4 +1,5 @@
 ---
+id: bee46a5d-f732-4d6a-85a8-298b0961c88d
 title: ZendCon 2009 calling for papers
 date: 2009-05-05 02:50:39 +0200
 tags: [ZendCon]

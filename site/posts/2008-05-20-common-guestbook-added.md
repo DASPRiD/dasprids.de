@@ -1,4 +1,5 @@
 ---
+id: 6f243a6b-ddbb-4e42-9364-a12e39b68cf0
 title: Common Guestbook added
 date: 2008-05-20 01:15:52 +0200
 tags: [Site]

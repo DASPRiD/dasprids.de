@@ -1,4 +1,5 @@
 ---
+id: b85fb8b1-8d83-4d5d-ba3e-960bf3660fa8
 title: Private roadmap for Zend Framework 1.7.0
 date: 2008-09-05 01:13:34 +0200
 tags: [Zend Framework]

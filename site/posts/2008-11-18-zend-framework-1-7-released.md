@@ -1,4 +1,5 @@
 ---
+id: 4b7a6f19-8a93-4347-a5fb-7390ff35e68f
 title: Zend Framework 1.7 released
 date: 2008-11-18 00:10:33 +0100
 tags: [Zend Framework]

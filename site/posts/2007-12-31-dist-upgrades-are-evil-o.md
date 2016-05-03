@@ -1,4 +1,5 @@
 ---
+id: a95c1c63-ae3f-4047-b324-61c66eb84e61
 title: Dist upgrades are evil \o/
 date: 2007-12-31 15:58:12 +0100
 tags: [PC setup]

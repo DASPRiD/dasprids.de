@@ -1,4 +1,5 @@
 ---
+id: 29e01643-b9c2-43c2-8c3f-164e40b5f5c9
 title: QR-Code generation in PHP, now with bacon flavor
 date: 2013-04-01 20:23:49 +0200
 tags: [PHP]

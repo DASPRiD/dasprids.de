@@ -1,4 +1,5 @@
 ---
+id: afd9370a-c895-4d91-86b1-701e7abbccdb
 title: Determining the environment in your application
 date: 2009-03-25 11:55:15 +0100
 tags: [PHP]

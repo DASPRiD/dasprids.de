@@ -1,4 +1,5 @@
 ---
+id: 3c0259b8-8218-4782-9035-4520bf74882e
 title: Private communication between PHP classes
 date: 2015-12-13 18:08:59 +0100
 tags: [PHP, Software Architecture]

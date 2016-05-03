@@ -1,4 +1,5 @@
 ---
+id: 3dd0bbd9-80d5-423b-871f-22c9814081b3
 title: Wrapper-Factory for Zend_Cache
 date: 2009-04-15 02:12:04 +0200
 tags: [Zend Framework, Best practices]

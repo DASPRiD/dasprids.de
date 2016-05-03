@@ -1,4 +1,5 @@
 ---
+id: 17e49928-d8c1-42bd-a40c-0ff1a3d1715f
 title: Klotski JavaScript clone
 date: 2009-02-20 01:53:56 +0100
 tags: [PHP, JavaScript]

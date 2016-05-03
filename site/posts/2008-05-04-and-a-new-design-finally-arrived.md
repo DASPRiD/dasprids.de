@@ -1,4 +1,5 @@
 ---
+id: 9014dea4-20d6-43da-9023-2cb1a49c52dd
 title: And a new design finally arrived
 date: 2008-05-04 16:25:10 +0200
 tags: [Site]

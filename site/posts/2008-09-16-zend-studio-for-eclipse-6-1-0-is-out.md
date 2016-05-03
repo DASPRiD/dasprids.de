@@ -1,4 +1,5 @@
 ---
+id: 6193df0e-a4a5-40a1-8094-8a66a0106999
 title: Zend Studio for Eclipse 6.1.0 is out
 date: 2008-09-16 20:48:13 +0200
 tags: []

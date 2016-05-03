@@ -1,4 +1,5 @@
 ---
+id: 75115d37-5571-4399-abf8-5ebc643d97e6
 title: Zend_Application and other 1.8 components
 date: 2009-03-23 11:16:48 +0100
 tags: [Zend Framework]

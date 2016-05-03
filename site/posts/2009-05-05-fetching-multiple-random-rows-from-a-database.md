@@ -1,4 +1,5 @@
 ---
+id: 378134bf-53c1-4345-bfeb-50d8da91581c
 title: Fetching multiple random rows from a database
 date: 2009-05-05 18:45:08 +0200
 tags: [MySQL]

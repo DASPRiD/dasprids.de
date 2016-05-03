@@ -1,4 +1,5 @@
 ---
+id: 236eda0a-eea9-4c72-8141-697b6df83a3a
 title: Zend Framework 1.7 in 17 days
 date: 2008-10-29 23:35:10 +0100
 tags: [Zend Framework]

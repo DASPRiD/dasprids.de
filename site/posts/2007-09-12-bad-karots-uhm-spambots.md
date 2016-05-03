@@ -1,4 +1,5 @@
 ---
+id: bb70f665-59f9-4729-aa7c-6d408fbaf69c
 title: Bad karots, uhm, spambots
 date: 2007-09-12 01:23:45 +0200
 tags: [Site]

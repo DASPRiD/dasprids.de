@@ -1,4 +1,5 @@
 ---
+id: 3aefaded-b24a-426f-8e48-95857ff5b523
 title: TremRadio troubles
 date: 2007-07-16 00:56:25 +0200
 tags: [TremRadio]

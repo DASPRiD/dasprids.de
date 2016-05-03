@@ -1,4 +1,5 @@
 ---
+id: 4c5d1265-228f-48a7-8911-f6e20d55a878
 title: Translated segments for standard route
 date: 2009-04-01 10:15:52 +0200
 tags: [Zend Framework, i18n]

@@ -1,4 +1,5 @@
 ---
+id: bfe85555-ec9f-4997-861e-b2f96608a2dc
 title: 'Zend_Ical: LALR parsing'
 date: 2007-09-26 23:37:58 +0200
 tags: [Zend Framework]

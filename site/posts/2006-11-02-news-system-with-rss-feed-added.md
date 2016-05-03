@@ -1,4 +1,5 @@
 ---
+id: 25baac27-cb7b-42bb-9957-cd72751c006a
 title: News system with RSS feed added
 date: 2006-11-02 21:18:51 +0100
 tags: [Site]
