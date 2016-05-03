@@ -16,8 +16,9 @@
         <div id="disqus_thread"></div>
         <script type="text/javascript">
             var disqus_config = function () {
-                this.page.url = '{{ post.url | serverurl }}';
-                this.page.identifier = '{{ post.date | date("Y-m-d") }}-{{ post.slug }}';
+                this.page.url = '{{ post.url | serverurl | escape('js') }}';
+                this.page.identifier = '{{ post.id | escape('js') }}';
+                this.page.title = '{{ post.title | escape('js') }}';
             };
             (function() {
                 var d = document, s = d.createElement('script');

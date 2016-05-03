@@ -56,6 +56,12 @@ class PostCollector
             $postData = $document->getYAML();
             $content = $markdown->transform($document->getContent());
 
+            if (array_key_exists('id', $postData)) {
+                $id = $postData['id'];
+            } else {
+                $id = $fileInfo->getBasename('.md');
+            }
+
             if (!array_key_exists('title', $postData)) {
                 throw new DomainException(sprintf('Missing "title" front matter in "%s"', $fileInfo->getPathname()));
             }
@@ -85,37 +91,38 @@ class PostCollector
                 $postTags->addItem($tags[$tagSlug]);
             }
 
-            unset($postData['tags']);
-
             $title = $postData['title'];
-            unset($postData['title']);
 
             if (array_key_exists('description', $postData)) {
                 $description = $postData['description'];
-                unset($postData['description']);
             } else {
                 $description = substr(strip_tags($content), 0, 50) . '…';
             }
 
             if (array_key_exists('slug', $postData)) {
                 $slug = $postData['slug'];
-                unset($postData['slug']);
             } else {
                 $slug = $slugifier->slugify($title);
             }
 
             $date = DateTimeImmutable::createFromFormat('Y-m-d H:i:s O', $postData['date']);
             $date->setTimezone($this->timeZone);
-            unset($postData['date']);
+
+            if (array_key_exists('metaData', $postData)) {
+                $metaData = (array) $postData['metaData'];
+            } else {
+                $metaData = [];
+            }
 
             $post = new Post(
+                $id,
                 $title,
                 $date,
                 $this->blogUrl . '/' . $date->format('Y/m/d') . '/' . $slug . '/',
                 $description,
                 $content,
                 $postTags,
-                $postData
+                $metaData
             );
 
             $posts->addItem($post);

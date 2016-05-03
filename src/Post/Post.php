@@ -10,6 +10,11 @@ class Post
     /**
      * @var string
      */
+    private $id;
+
+    /**
+     * @var string
+     */
     private $title;
 
     /**
@@ -43,6 +48,7 @@ class Post
     private $metaData;
 
     public function __construct(
+        string $id,
         string $title,
         DateTimeImmutable $date,
         string $url,
@@ -51,6 +57,7 @@ class Post
         TagCollection $tags,
         array $metaData
     ) {
+        $this->id = $id;
         $this->title = $title;
         $this->date = $date;
         $this->url = $url;
@@ -58,6 +65,11 @@ class Post
         $this->content = $content;
         $this->tags = $tags;
         $this->metaData = $metaData;
+    }
+
+    public function getId() : string
+    {
+        return $this->id;
     }
 
     public function getTitle() : string
