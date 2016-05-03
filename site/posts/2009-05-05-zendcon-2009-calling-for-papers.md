@@ -1,7 +1,7 @@
 ---
 title: ZendCon 2009 calling for papers
 date: 2009-05-05 02:50:39 +0200
-tags: [ZendCon09]
+tags: [ZendCon]
 ---
 
 Finally we've got location and dates for this year's ZendCon! It will be held October 19th – 22nd at the San Jose Convention Center. Until May 31st the [Call for Papers](http://zendcon.com/) will be open. As I'm most certainly going to attend this year again, I will try to get one or two sessions filled myself as speaker.

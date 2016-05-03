@@ -10,6 +10,6 @@ So I took their offer and quickly created a t-shirt design with my logo on the f
 
 As they are based in the USA and I'm in Germany, the shipping took a while to arrive here, but that is kinda normal. Eventually the t-shirts arrived today and the quality of both the shirts and the print look very well:
 
-[][http://stuff.dasprids.de/images/ooshirt-tshirt-dasprids.jpg]
+![DASPRiD's T-Shirt](/images/content/posts/2012-01-04-ooshirt-tshirt-dasprids.jpg)
 
 Thanks again to Ooshirt for their sponsorship and I can highly recommend them to anyone who wants to print their own clothes.

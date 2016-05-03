@@ -1,7 +1,7 @@
 ---
 title: Raising private storage to the limits
 date: 2010-04-24 16:10:56 +0200
-tags: [Western Digital, Sonnet Fusion, DX800RAID]
+tags: [PC setup]
 ---
 
 A few months ago, I was looking for a new storage system, since my existing file server with it's 2.5TB of data were running full and I didn't want to put another drive in it. The existing file server was pretty loud and it made some trouble with the network connection since some time. I first looked into existing NAS systems, but with a good number of bays (between six and eight) were pretty expensive, while still suffering from the network bottleneck. They also were always just build with MDADM, a Linux software-RAID. My next idea was building a new, more silent file server, but with the right components I would also have gotten to a pretty high price, while still having the problem with the network bottlenecks.
@@ -10,7 +10,7 @@ Finally I made the decision that I, as I live alone, do not need a secondary mac
 
 After this month-long looking around, it should only take a week until everything arrived. When I came home at 18 o'clock I directly unpacked the new RAID system and started studying the installation manual. I was a bit shocked when I read that I first have to disassemble the trays from their transport bridges, but after an hour I had it done. It took me another 30 minutes then to prepare the drives with the threadlocker and mount them into their trays, but then I were ready to go on with the RAID itself.
 
-[[][http://farm5.static.flickr.com/4029/4548148720_09f3804686.jpg]](http://www.flickr.com/photos/30771817@N06/4548148720/in/set-72157623796960133/)
+[![8 x 2TB Western Digital RE4-GP](http://farm5.static.flickr.com/4029/4548148720_09f3804686.jpg)](http://www.flickr.com/photos/30771817@N06/4548148720/in/set-72157623796960133/)
 
 The next part was inserting the RAID controller card into a PCI-E slot, which only took a couple of minutes. Time to tell you, I already bought a new mainboard a few weeks ago as I knew that I would need another PCI-E 8x slot. Anyway, after closing my PC again, I connected the DX800RAID with two mini-SAS cables to the PC and with a power cable to the power supply. Before I should boot the system, I surely had to insert all eight drives, which was done in a couple of minutes as well. Finally I should boot the system.
 
@@ -18,7 +18,7 @@ At this point, I didn't need any manual anymore, since it was straight forward. 
 
 The rebuild was done and I could start setting up an empty partition with DM-Crypt on it with an EXT4 partition, but it shouldn't be that easy as I thought. I were surely already telling some friends about my new toy, and one of them was going to tell me some things I had to consider when setting up everything. After talking a bit about the technical details of the RAID, we figured out that the chunk size was 128kb and the sector size was 521b, thus the empty partition had to start at 1536. This took a while, as GParted wasn't able to setup partition starts at sectors, and parted wasn't so easy to use. The nxt step should be to setup DM-Crypt correctly, and after a while we figured out that you can define the payload offset for encrypted data, which would be 1536 as well. Finally I could set up the EXT4 partition, and with the help of my friend we choosed the parameters for it wisely. At the time we were done, it was already 4 o'clock in the night, so I decided to get to bed after running a quick write-performance benchmark (which showed me nice 200 MB/s) and telling my friend that I owe him a beer.
 
-[[][http://farm5.static.flickr.com/4005/4547513465_23d7a2d933.jpg]](http://www.flickr.com/photos/30771817@N06/4547513465/in/set-72157623796960133/)
+[![Sonnet Fusion DX800RAID](http://farm5.static.flickr.com/4005/4547513465_23d7a2d933.jpg)](http://www.flickr.com/photos/30771817@N06/4547513465/in/set-72157623796960133/)
 
 When I came home the next day, I started copying all data from my old file server to the new RAID system with rsync, which should take a while. One day later, it wasn't even done with the first 1 TB disks (which were running in RAID1), so I decided to move it from the file server to my desktop PC, as I was going to use them as system disk for my next Ubuntu 10.04 installation anyway. This was a pretty hard task, as my huge graphics card blocked two HDD bays and I had to rearrange the disks a bit. I restarted the copying then from the local disk, which only took another 16 hours. The next day I started copying all other data parallely from my file server, which was done just 1.5 days later. Finally I could shut down my old file server forever.
 

@@ -14,7 +14,7 @@ A few days later, I wanted to implement Zend_Markup in my blog, replacing the ol
 
 When I noticed the problem with newline characters, I told Pieter that I'd create an issue ticket together with a patch, which I planned to work like in my own implementation to handle newline-characters around and within tags. To illustrate the problem, think about the common usual BBCode:
 
-```
+```html
 This is a nice list:
 
 [list]
@@ -22,11 +22,12 @@ This is a nice list:
 [*]Second item
 [/list]
 
-That's the list```
+That's the list
+```
 
 This code would (somewhat) result in the following HTML with Zend_Markup:
 
-```
+```html
 This is a nice list:<br />
 <br />
 <ul>
@@ -34,9 +35,10 @@ This is a nice list:<br />
 <li>Second item</li>
 </ul><br />
 <br />
-That's the list```
+That's the list
+```
 
-As you can see, there will be unwanted newlines rendered around the <ul> block-level element. After some tinkering around I had to find out that it was impossible to implement without major refactoring, which would affect the backward compatibility and thus had no chance to be fixed before Zend Framework 2.0. 
+As you can see, there will be unwanted newlines rendered around the <ul> block-level element. After some tinkering around I had to find out that it was impossible to implement without major refactoring, which would affect the backward compatibility and thus had no chance to be fixed before Zend Framework 2.0.
 
 In the end there is a component left which has neither a complete documentation (many methods are not documented in the manual) nor it can be used to full extend as a usual BBCode-Parser. I ended up refactoring the BBCode-parser I partly wrote withing my company and [using it as final replacement](http://site.svn.dasprids.de/trunk/application/library/App/BBCode/) until I can see that Zend_Markup does not suffer by those teething problems.
 

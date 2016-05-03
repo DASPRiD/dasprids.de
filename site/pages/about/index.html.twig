@@ -2,11 +2,15 @@
 
 {% block title %}About myself{% endblock %}
 {% block content %}
-    <article class="page" itemscope itemtype="http://schema.org/AboutPage">
+    <article class="page about" itemscope itemtype="http://schema.org/AboutPage">
         <h1 class="page-header" itemprop="name">About myself</h1>
 
-        <section>
-            {% filter markdown|raw %}
+        <section class="row">
+            <div class="col-sm-3">
+                <img itemprop="image" src="/images/content/photo-dasprid.jpg" title="Ben Scholzen 'DASPRiD'" class="about-photo img-responsive">
+            </div>
+            <div class="col-sm-9">
+                {% filter markdown|raw %}
 # General
 My name is Ben Scholzen, on the internet mostly known by my nickname "DASPRiD". I was born in 1986 in Engelskirchen,
 Germany, and grew up in Bonn.
@@ -54,7 +58,8 @@ Anyway, around the year 2000 or so I decided that it was time for another nickna
 clan with the two leaders named "DASGiB" and "DASKAjA". During a night session we brainstormed a few new ideas for a
 nickname, and one of the suggestions was "DASPRiD", based on the earlier nickname. Since I liked that choice, I sticked
 with it.
-            {% endfilter %}
+                {% endfilter %}
+            </div>
         </section>
     </article>
 {% endblock %}

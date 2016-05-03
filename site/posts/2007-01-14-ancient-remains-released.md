@@ -8,5 +8,5 @@ Alright guys. I'm happy to tell you that I've released Ancient Remains today. I 
 
 Remember, this is the final version, so I won't do any changes anymore. Only if many guys find new bugs or want greater changes, I will do them until the Tremulous 1.2 release. Also remember, if the performance is very bad for you outside, you will be able to switch the grass off in the options.
 
-Happy Fragging,
+Happy Fragging,  
 DASPRiD

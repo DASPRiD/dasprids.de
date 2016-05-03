@@ -12,11 +12,11 @@
     "require": {
         "mnapoli/front-yaml": "^1.5",
         "twig/twig": "^1.24",
-        "michelf/php-markdown": "^1.6",
         "bacon/bacon-string-utils": "^1.0",
         "twig/extensions": "^1.3",
         "zendframework/zend-servicemanager": "^3.0",
-        "zendframework/zend-feed": "^2.7"
+        "zendframework/zend-feed": "^2.7",
+        "erusev/parsedown": "^1.6"
     },
     "autoload": {
         "psr-4": {

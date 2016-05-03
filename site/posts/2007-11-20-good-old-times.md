@@ -8,5 +8,5 @@ After I saw the video of my brother, I remembered the old video I made in the lo
 
 Anyway, after some searching I found this two old snippets of the video again. The first one contains the Intro and some trickjump scenes, the second is a short dubbed scence from Starship Troopers, which was a part of the entire movie. Enjoy it.
 
-[Versus_the_World.avi](ftp://dasprids.de/stuff/Videos/Versus_the_World.avi)
-[Versus_the_World-Mini-Scene.avi](ftp://dasprids.de/stuff/Videos/Versus_the_World-Mini-Scene.avi)
+- [Versus_the_World.avi](ftp://dasprids.de/stuff/Videos/Versus_the_World.avi)
+- [Versus_the_World-Mini-Scene.avi](ftp://dasprids.de/stuff/Videos/Versus_the_World-Mini-Scene.avi)

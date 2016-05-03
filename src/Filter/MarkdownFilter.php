@@ -3,22 +3,22 @@ declare(strict_types=1);
 
 namespace Staphp\Filter;
 
-use Michelf\Markdown;
+use Parsedown;
 
 class MarkdownFilter
 {
     /**
-     * @var Markdown
+     * @var Parsedown
      */
     private $parser;
 
     public function __construct()
     {
-        $this->parser = new Markdown();
+        $this->parser = new Parsedown();
     }
 
     public function __invoke($markdown) : string
     {
-        return $this->parser->transform($markdown);
+        return $this->parser->text($markdown);
     }
 }

@@ -12,7 +12,7 @@ Well, it will be included in ZF 1.6 RC1, which will come very soon. Between the 
 
 > **Hostname routing**
 > You can also use the hostname for route matching. For simple matching there is a static hostname option:
-> 
+>
 > ```php
 > <?php
 > $route = new Zend_Controller_Router_Route(
@@ -26,10 +26,11 @@ Well, it will be included in ZF 1.6 RC1, which will come very soon. Between the 
 >         'action'     => 'index'
 >     )
 > );
-> $router->addRoute('archive', $route);```
-> 
+> $router->addRoute('archive', $route);
+> ```
+>
 > If you want to match parameters in the hostname, there is a regex option. In the following example, the subdomain is used as username parameter for the action controller. When assembling the route, you simply give the username as parameter, as you would with the other path parameters:
-> 
+>
 > ```php
 > <?php
 > $route = new Zend_Controller_Router_Route(
@@ -39,7 +40,7 @@ Well, it will be included in ZF 1.6 RC1, which will come very soon. Between the 
 >             'reverse' => '%s.mysite.com'
 >             'params'  => array(
 >                 1 => 'username'
->             ) 
+>             )
 >         ),
 >         'path' => ''
 >     ),
@@ -49,4 +50,5 @@ Well, it will be included in ZF 1.6 RC1, which will come very soon. Between the 
 >         'action'     => 'index'
 >     )
 > );
-> $router->addRoute('profile', $route);```
+> $router->addRoute('profile', $route);
+> ```

@@ -8,5 +8,4 @@ Despite the fact that we wanted to wait for PHP 5.3 to be spreaded along all maj
 
 By that time, we will also have moved to a new versioning system. As you know, we were valuating other versioning systems against the current SVN installation. Our first decision was, to move to GIT, but now we decided to go with [Bazaar](http://bazaar.canonical.com/en/), which offers a much better infrastructure than GIT or SVN could do. We will surely keep a read-only SVN repository, so those of you who are still using svn:externals are not left behind.
 
-**Update - 2nd April 2010**
-This story was surely just an april fool ;)
+**Update**: This story was surely just an april fool ;)

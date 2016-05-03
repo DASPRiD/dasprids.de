@@ -1,7 +1,7 @@
 ---
 title: Tri-Display on Linux with nvidia
 date: 2008-12-15 11:18:44 +0100
-tags: [TwinView, Xinerama, nvidia, Linux]
+tags: [PC setup]
 ---
 
 A few days ago, I got two new graphics cards (Geforce 9800 GT) and a third monitor. So far, so good - I thought. I had yet only set up a quad-display setup at my old work, and that was on a Windows PC. I didn't think that this setup would be something unusual, so I started by browser and searched on Google about it. But the results I got were anything else than promising:

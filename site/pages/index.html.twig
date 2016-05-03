@@ -5,6 +5,12 @@
     <article itemscope itemtype="http://schema.org/WebPage">
         <h1 class="page-header" itemprop="name">Home</h1>
 
-
+        <section>
+            {% filter markdown|raw %}
+Welcome to the website of Ben Scholzen alias DASPRiD. This is the place where I post about development topics, like
+recent open source projects or best practices, on my [blog](/blog/) and present a few information
+[about myself](/about/).
+            {% endfilter %}
+        </section>
     </article>
 {% endblock %}

@@ -25,5 +25,4 @@ From the rest:
 
 And among others lot's of bugfixes. After this release is over, I will organize myself a bit and get ready for the next features in 1.8.
 
-**Update:**
-The date was moved to the 16th November (so yet again, 17 days).
+**Update:** The date was moved to the 16th November (so yet again, 17 days).

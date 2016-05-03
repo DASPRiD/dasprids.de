@@ -8,5 +8,4 @@ Finally the ZF guys managed to enable my SVN access to the ZF repository. Ralph 
 
 And well, which proposal is next? Good question, currently Zend_Ical is pending for recommendation but has been for a long time. My liaison of that proposal has not contacted me yet. So I bet one of the other proposals will make it first.  Maybe Zend_Config_Db or Zend_Whois.
 
-**Update 1:**
-Zend_Config_Xml Attribute support is now in the incubator.
+**Update:** Zend_Config_Xml Attribute support is now in the incubator.

@@ -11,7 +11,8 @@ Today I added support for constants in Zend_Config_Xml. This new feature will be
     <production>
         <includePath><zf:const zf:name="APPLICATION_PATH"/>/library</includePath>
     </production>
-</config>```
+</config>
+```
 
 On PHP side, it works like usual:
 
@@ -20,6 +21,7 @@ On PHP side, it works like usual:
 define('APPLICATION_PATH', dirname(__FILE__));
 $config = new Zend_Config_Xml($xmlString, 'production');
 
-echo $config->includePath; // Prints "/var/www/something/library"```
+echo $config->includePath; // Prints "/var/www/something/library"
+```
 
-Additionally, the "extends" attribute was also moved to this new namespace, making the NULL namespaced extends attribute deprecated until ZF 2.0, when it will be removed.
+Additionally, the `extends` attribute was also moved to this new namespace, making the NULL namespaced extends attribute deprecated until ZF 2.0, when it will be removed.

@@ -81,7 +81,7 @@ class AwesomeToaster implements ToasterInterface
 
 There you go. We have the original description and on top of that our implementation-specific one. This would output like this:
 
-```
+```html
 Toast a white-bread.
 
 This method will toast a bread for a given amount of seconds.
@@ -99,5 +99,4 @@ A last thing about overriding @param keywords. This is possible, but will make n
 
 I hope that this helps a few people to reduce the insaneness of way too much redundant and copy-pasted inline documentation and gives you a bit more time to actually produce awesome code.
 
-**Update**
-I changed the Toast to Bread, based on Geeh's comment.
+**Update:** I changed the Toast to Bread, based on Geeh's comment.

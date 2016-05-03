@@ -32,7 +32,8 @@ ALTER TABLE `messages`
   FOREIGN KEY (`locale_id`)
   REFERENCES `locales` (`locale_id`)
   ON DELETE CASCADE
-  ON UPDATE CASCADE;```
+  ON UPDATE CASCADE;
+```
 
 The first table is pretty easy to explain. It contains the 5-character locale (for instance: en-EN) and the definitions for the plural forms. The plural forms are defined the same way as they are in gettext and other formats.
 
@@ -116,7 +117,8 @@ class DatabaseTranslationLoader implements LoaderInterface
 
         return $textDomain;
     }
-}```
+}
+```
 
 This loader is a little bit tricky, as we are abusing the $filename parameter to pass in the text domain we want to load. Apart from that, the code should be pretty much self-explaining. Next you need to create a factory, so that the service manager can populate the loader with a database adapter when the translator requests an instance of the loader:
 
@@ -133,7 +135,8 @@ class DatabaseTranslationLoaderFactory implements FactoryInterface
             $serviceLocator->get('Zend\Db\Adapter\Adapter')
         );
     }
-}```
+}
+```
 
 Finally we can add the translations to our application:
 
@@ -143,7 +146,8 @@ $translator->addTranslationFile(
     'DatabaseTranslationLoader',
     'text-domain',
     'text-domain'
-);```
+);
+```
 
 We have to enter the text domain twice here, as you read earlier we are abusing the $filename parameter to pass it to the loader. Now the translator is ready to use. You should make sure to use caching, as loading the translations on every request is kinda heavy. You'd usually choose a long caching time, and then simply invalidate the cache everytime the database translations are updated.
 
@@ -151,5 +155,4 @@ I hope this post will help all of you seeking for a solution to this problem. Al
 
 Be sure that more i18n related topics are following in the near future, and when you are going to [ZendCon](http://www.zendcon.com), don't miss my [i18n](http://zendcon.com/sessions/?tid=2622#session-22628) or [router](http://zendcon.com/sessions/?tid=2622#session-22627) talk there!
 
-**Update**
-I'm currently working on a database translation loader added to ZF2 itself. It will most likely be available in 2.1.
+**Update:** I'm currently working on a database translation loader added to ZF2 itself. It will most likely be available in 2.1.

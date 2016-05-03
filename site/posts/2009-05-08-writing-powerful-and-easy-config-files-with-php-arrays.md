@@ -22,7 +22,7 @@ return array_merge_recursive(array(
             'moduleDirectory' => APPLICATION_PATH . '/modules'
         ),
         'router' => array(
-            'routes' => include dirname(__FILE__) . '/routes.config.php' 
+            'routes' => include dirname(__FILE__) . '/routes.config.php'
         ),
         'db' => array(
             'adapter' => 'pdo_mysql',
@@ -31,7 +31,8 @@ return array_merge_recursive(array(
             )
         )
     )
-), include dirname(__FILE__) . '/' . APPLICATION_ENV . '.config.php');```
+), include dirname(__FILE__) . '/' . APPLICATION_ENV . '.config.php');
+```
 
 This config file uses array_merge_recursive to tage a basic config array and overwrite or extend properties from an environment specific config file (in this case development.config.php and production.config.php). Additionally the routes for the router are outsourced into a separate file, since they are taking up a lot of space. Now let's take a look at the the development.config.php:
 
@@ -57,7 +58,8 @@ return array(
             )
         )
     )
-);```
+);
+```
 
 As you can see, the development specific config file now enables all the error reporting, set the baseUrl for the front controller and the connection parameters for the database adapter. The production specific config file is doing similar things but disabling all error reporting. As you have seen in the base config file, two constants should already be set (APPLICATION_PATH and APPLICATION_ENV). To use the base config file within your Zend Framework application, you load it like this:
 
@@ -68,9 +70,9 @@ $config = new Zend_Config(require APPLICATION_PATH . '/config/config.php');
 
 // Or telling Zend_Application to load the config
 $application = new Zend_Application(APPLICATION_ENV,
-                                    APPLICATION_PATH . '/config/config.php');```
+                                    APPLICATION_PATH . '/config/config.php');
+```
 
 If you want to see a full example of a working config-structure, you can take a look at my new codebase in my [SVN repository](http://site.svn.dasprids.de/trunk/application/config/).
 
-**Update 2010-10-07**
-As of PHP 5.3, you should use *array_replace_recursive()* instead of *array_merge_recursive()*.
+**Update 2010-10-07:** As of PHP 5.3, you should use *array_replace_recursive()* instead of *array_merge_recursive()*.

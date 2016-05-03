@@ -1,7 +1,7 @@
 ---
 title: ZendCon08 résumé
 date: 2008-09-20 00:20:25 +0200
-tags: [ZendCon08]
+tags: [ZendCon]
 ---
 
 So the ZendCon is finally over. I was a lot of fun and very nice to meet all those people. Also the session were very interesting and I've learned a lot about stuff which I didn't knew before. I'm know staying here in Santa Clara until Saturday, and then will fligh back to Germany (arriving around 14:00 at Sunday). After all I would really like to stay here even longer, but work is calling again.
@@ -14,4 +14,4 @@ By the way, I had some talks with the ZF team about future ideas of the Zend Fra
 
 So, I'm looking forward to ZendCon09 and I hope that all of the guys this year will return as well.
 
-[][http://stuff.dasprids.de/images/zendcon08-ending.jpg]
+![Group photo after ZendCon09](/images/content/posts/2008-09-20-zendcon-ending.jpg)

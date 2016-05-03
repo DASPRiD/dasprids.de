@@ -1,7 +1,7 @@
 ---
 title: Switching from feet to arms
 date: 2010-02-26 00:12:53 +0100
-tags: [Ergotron]
+tags: [PC setup]
 ---
 
 Got confused by the topic? Very well, that was the plan. As some may think, I'm not talking about human body parts here, but about technology. The feet of my two 30" monitors where taking up lots of space on my desk, so  thought about freeing up some of that space.
@@ -10,10 +10,9 @@ After some considerations, and earning some money with my new job, I decided to 
 
 When I came home, I directly moved to my desk and prepared for the installation. Removing the feet was pretty easy, and following the manual was so as well. But after a few minutes I should notice that the 200x100 adapter rails didn't fit on my monitors, so I removed them and tried to call the Ergotron support, which was unsuccessful. Luckily my monitors support the 100x100 mount as well and I could proceed with the installation. An hour later, both monitors were mounted at my desk and in place:
 
-[[][http://farm3.static.flickr.com/2732/4388062172_1a84b2f5e0.jpg]](http://www.flickr.com/photos/30771817@N06/sets/72157623507910462/)
-*(Click image for the entire photostream)*
+[![Ergotron monitor setup](http://farm3.static.flickr.com/2732/4388062172_1a84b2f5e0.jpg)](http://www.flickr.com/photos/30771817@N06/sets/72157623507910462/)
 
-**Conclusion:**
+# Conclusion
 The arms are easy to install and you can even mount them to your desk with 30" monitors installed, tho it would be easier if another guy can help. I have a lot of space on my desk now, which was taken by the feet prior. Now I also can turn around the monitors to my bed in an extended way, so that I can watch movies from there. Additionally, I can also get the monitors closer to the couch when I have visitors and want to show them something or if we want to watch a movie together.
 
 All in all, those arms are really great, even if they are a bit expensive for 140€ each. But then, the monitors were 1200€ each, so that is a good price in the end again.

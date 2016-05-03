@@ -16,6 +16,5 @@ If you are interested, how the site is built, you may want to have a look at the
 
 If you find any bugs in the current version of the website, please inform me about it.
 
-
-Best regards,
+Best regards,  
 Ben Scholzen 'DASPRiD'

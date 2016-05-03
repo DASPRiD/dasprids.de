@@ -1,7 +1,7 @@
 ---
 title: Tremstats 0.5 is out!
 date: 2006-11-24 19:10:17 +0100
-tags: [Python, Tremstats]
+tags: [Tremstats]
 ---
 
 I just released Tremstats 0.5. I know that my plans were different, but here you'll get it, with many bugfixed and improvements. Here's a list of all changes:

@@ -1,10 +1,10 @@
 ---
 title: Zend_Console_ProgessBar in Incubator
 date: 2008-08-19 18:43:15 +0200
-tags: [Zend Framework, Console]
+tags: [Zend Framework]
 ---
 
-I was bored the other day again, and thought about some tiny component, which would be as well helpful for some other developers. And there the idea came: Console applications need to show the status somehow, and what is a better way than a progressbar? Well, without telling much, you can kinda simply test it out yourself. Get Zend/Console/ProgressBar.php from the Incubator, and use the following test code:
+I was bored the other day again, and thought about some tiny component, which would be as well helpful for some other developers. And there the idea came: Console applications need to show the status somehow, and what is a better way than a progressbar? Well, without telling much, you can kinda simply test it out yourself. Get `Zend/Console/ProgressBar.php` from the Incubator, and use the following test code:
 
 ```php
 <?php
@@ -18,15 +18,12 @@ for ($i = 1; $i <= 100; $i++) {
     usleep(1000000);
 }
 
-fwrite(STDOUT, "\n");```
-
-The result of that code will somewhat look like this:
-
-[][/media/images/misc/zend-console-progressbar.png]
+fwrite(STDOUT, "\n");
+```
 
 If you have any further improvements you want in this component, just tell me.
 
-**Features:**
+# Features:
 - Custom min/max values
 - Custom order of elements (percent, ETA, bar) as well as leaving out elements
 - Automatic ETA calculation

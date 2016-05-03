@@ -8,5 +8,5 @@ At the beginning of July, I made a presentation about Zend_ProgressBar and Zend_
 
 To everyone else who understands german, enjoy the presentation. I have uploaded the slides as well, as the code examples are not very readable on the video.
 
-[Video presentation](http://downloads.dasprids.de/videos/PHPUG-Karlsruhe%20Juni%202009.avi)
-[Slides](http://downloads.dasprids.de/presentations/PHPUG-Karlsruhe%20Juni%202009.odp)
+- [Video presentation](http://downloads.dasprids.de/videos/PHPUG-Karlsruhe%20Juni%202009.avi)
+- [Slides](http://downloads.dasprids.de/presentations/PHPUG-Karlsruhe%20Juni%202009.odp)

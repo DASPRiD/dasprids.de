@@ -8,8 +8,8 @@ use DateTimeImmutable;
 use DateTimeZone;
 use DirectoryIterator;
 use DomainException;
-use Michelf\Markdown;
 use Mni\FrontYAML\Parser;
+use Parsedown;
 
 class PostCollector
 {
@@ -42,7 +42,7 @@ class PostCollector
     {
         $iterator = new DirectoryIterator($this->sitePath . '/posts');
         $parser = new Parser();
-        $markdown = new Markdown();
+        $parsedown = new Parsedown();
         $slugifier = new Slugifier();
         $posts = new PostCollection();
         $tags = [];
@@ -54,7 +54,7 @@ class PostCollector
 
             $document = $parser->parse(file_get_contents($fileInfo->getPathname()));
             $postData = $document->getYAML();
-            $content = $markdown->transform($document->getContent());
+            $content = $parsedown->text($document->getContent());
 
             if (array_key_exists('id', $postData)) {
                 $id = $postData['id'];

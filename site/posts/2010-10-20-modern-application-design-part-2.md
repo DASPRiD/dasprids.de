@@ -4,25 +4,25 @@ date: 2010-10-20 10:48:40 +0200
 tags: [Zend Framework, PHP, Best practices]
 ---
 
-**Introduction**
+# Introduction
 I know it was a long time ago when I wrote [part one](http://www.dasprids.de/blog/2010/03/05/modern-application-design-part-1) of this serial, and I promised many times to write the next chapter. Now I finally found some time to tell you a bit more about modern application design. In this part I'm going to write about the service layer and the model architecture used in my website. As usual, you can find the entire source code in my [SVN repository](http://site.svn.dasprids.de/trunk).
 
-**General overview**
+# General overview
 Everything has to start somewhere, and in programing languages, that usually means some common classes which are used by your entire application. In my website, those common classes classes can be found under */application/library/App*. Concrete implementations of models and services can be found in the appropriate module folders. For now, let's start with something just partly related to both of them.
 
-**Forms, or, how input flows**
+# Forms, or, how input flows
 A user has generally two options to communicate with your application. Either via simple hyperlinks, or via forms. The first case is pretty regular, so let's focus on the second one. Zend Framework comes with a great component, called Zend_Form. This component does not only take care of generating nice HTML for you, but does also help you filtering and validating input coming from your *evil* user. The service layer is going to take advantage of this, by using it to validate input before processing it. There are many great tutorials about Zend_Form on the internet, especially by [Matthew Weier O'Phinney](http://weierophinney.net/matthew), so I won't go into detail about them.
 
 All you have to know is, that every individual form in my application is its own class, extending a base form class in my library folder. Every concrete implementation sets up its own form elements in its init() method, for example my [login form](http://site.svn.dasprids.de/trunk/application/modules/default/forms/UserLogin.php).
 
-**The service layer**
+# The service layer
 Most people new to the Zend Framework usually start to access their data with components like Zend_Db_Table directly in their controllers, and even some of them in their views. This is generally not very good, as you hardcode your storage backend into your entire application. This not only makes it very hard to swap the backend when required, but also blocks your from doing good unit testing (you do unit testing, don't you?).
 
 The service layer comes to your rescue. It generally consists of a collection of classes around your models and data abstraction. Usually you should have about as many service classes as you have entities to represent in your application. In my case, I have services for users, articles, tags, guestbook entries and so on. Before I tell you more about a concrete service, let's see how the base for it looks like.
 
 The abstract class for every service is [App_Service_ServiceAbstract](http://site.svn.dasprids.de/trunk/application/library/App/Service/ServiceAbstract.php). It implements the Zend_Acl_Resource_Interface, so it can be used as an ACL resource as well. The abstract class is not only a base for concrete implementations, but does also offer retreiving services on-the-fly, also known as lazy loading. Each modules' bootstrap can attach services or injection containers into it, so that the abstract class knows, how to load the services. For the conrete implementations, it offers some helper methods for setting and checking ACLs.
 
-**Concrete implementation**
+# Concrete implementation
 Now, after I wrote enough about the base, let's take a look at the [article services](http://site.svn.dasprids.de/trunk/application/modules/blog/services/Article.php). When the article is instanciated, it gets passed a data mapper (more on this later). It uses this data mapper to create, update and read data from the storage backend. It overrides the _setupAcl() method from the abstract class, which tells the local ACL instance, which roles are allowed to do specific stuff. Another important method is getForm(), which creates and always returns an identical instance of the form.
 
 For data manipulation, the service offers three methods, insert(), update() and delete(). The insert() method takes an array of data, usually the $_POST array. The update() method takes the same, but additionally an ID to update. The delete() method just works with a simple ID. The insert() and update() methods work almost the same:
@@ -33,12 +33,12 @@ The delete() method is quite simple. It gets get article via the supplied ID fro
 
 The service also coems with some helper methods to retrieve data. In this case we have search(), fetchAll(), fetchBySlugAndDate(), fetchById(), fetchByYear(), fetchByTag() and fetchYears(). They all proxy to certain methods in the data mapper, some of them will do some magic before doing a proxy call. While data manipulation methods just take plain data to do their work, the fetch*() methods will return either an ArticleCollection or just a single Article. An exception is fetchYears(), which will just return an array of years where articles were written in.
 
-**Data mappers**
+# Data mappers
 When it comes to data manipulation, this has to be done somewhere. I'm personally not a big fan of existing ORM systems like [Doctrine](http://www.doctrine-project.org/) for some reasons, so I wrote my own small data mapper structure. The base implementation of my data mapper is [App_Model_Mapper_MapperAbstract](http://site.svn.dasprids.de/trunk/application/library/App/Model/Mapper/MapperAbstract.php). It does not much more than allowing to pass in a database adapter and setting or getting a default adapter via static methods.
 
 This is not very much, so let's head to the [article data mapper](http://site.svn.dasprids.de/trunk/application/modules/blog/models/mappers/Article.php). This data mapper also does some lucene logic for indexing articles, but that's not very important for now. The data mapper, like many others, offers three methods for data manipulation, insert(), update() and delete()), of which all take an Article instance. The mapper then just takes care to transform the Article object into something the backend can understand. As mentioned in the service layer part, the data mapper also offers several methods for retrieving data from the backend and converting them to Article and ArticleCollection objects again to be used by the application.
 
-**Entities and collections**
+# Entities and collections
 Usually, for each service and each data mapper, there is also always an entity and a collection class. For both of them, there are base classes in the /application/library/App/model folder. [Collections](http://site.svn.dasprids.de/trunk/application/library/App/Model/CollectionAbstract.php) do almost work like arrays, except that they restrict containing elements to be instances of specific entities, and also give you the possibilty of lazy loading, more about that later.
 
 The [base class for entities](http://site.svn.dasprids.de/trunk/application/library/App/Model/ModelAbstract.php) is also quite simple to understand. It offers setting and getting of values, as well as inserting values at construction time. Additionally, getters and setters for each value can be overriden to allow additional business logic. To take a look at a concrete implementation again, let's look at the [Article entity](http://site.svn.dasprids.de/trunk/application/modules/blog/models/Article.php). At the top it defines an array of possible values for the entity. It also offers two _set*() methods, which take care of generating a slug out of the title. There is also a getter for a permanent URL, which is mostly a convenience method for the view.
@@ -47,10 +47,10 @@ Now there's still a last case to cover. What happens with all those comments for
 
 When a data mapper creates an article object on retrieval, it will inject an Relation instance into the article object instead of a real collection. In case you want to iterate over the comments or count them, the comments will automatically be loaded.
 
-**Lazy loading of services**
+# Lazy loading of services
 One last thing I didn't cover yet, was, how services are loaded. My very first approach in the past was to inject an instance of every service into the abstract service class in each module bootstrap. This leaded to a lot of overhead, as 90% of the instances were never used at the specific request. Thus I create dependency injection containers for each module, for instance the [blog module injection container](http://site.svn.dasprids.de/trunk/application/modules/blog/services/InjectionContainer.php). It offers many get<Module>Service<Service>() methods, which will just return a new instance of the requested service.
 
 In each module bootstrap, I attach an instance of the specific injection container into the abstract service class, together with a class prefix. When requesting a service from the abstract class now, it first looks if there already is an instance, else it tries to figure out which dependency injection container to load via the class prefix. Since I want my views slim and nice, I also have a view helper getService(), which is just a proxy to App_Service_ServiceAbstract::getService(). It is mostly used in the views to retrieve data which are not request related or to get and display forms.
 
-**To be continued …**
+# To be continued …
 I hope this chapter was helpful for you, and that I covered enough to answer all relevant questions. You can surely ask some detail questions in the comments and I will try to answer them. I have not planned another chapter yet, but be sure that I will write something as soon as I find some time and something comes to my mind.

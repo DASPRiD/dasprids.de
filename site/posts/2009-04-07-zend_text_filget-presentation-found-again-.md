@@ -1,7 +1,7 @@
 ---
 title: Zend_Text_Filget presentation (found again)
 date: 2009-04-07 23:48:37 +0200
-tags: [Zend Framework, Screencast]
+tags: [Zend Framework, Presentation]
 ---
 
 While browsing my locale file archive, I found an old screencast presentation about Zend_Text_Filget I made a short time before ZF 1.6 came out. I guess that I never released it, because the sound had some cracks here and there, but after looking over it today, they aren't that annoying in my opinion.

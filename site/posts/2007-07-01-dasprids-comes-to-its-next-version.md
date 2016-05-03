@@ -10,8 +10,8 @@ However, here it is, and I'm proud to present it to you. I have now combined my 
 
 By the way, I integrated a [forum](http://forum) for the development and server purposes. So If you want to tell me some common things, suggest maps or settings for my game server, or you just want to do some public discussions, this is the right place for you.
 
-Then I have extended the section [about myself](http://about), and added a photo to it. I have also added things to the other sections, just have a look around.
+Then I have extended the section [about myself](/about/), and added a photo to it. I have also added things to the other sections, just have a look around.
 
 The most important change is, that the site contents are complety written in english now. So I hope to reach a bigger audience than before. Maybe my german friends will beat me in the ass for this, but they are no more that important.
 
-All in all, I hope that this new site will hand you all information you are seeking for. And if you have any suggestions to improve it, just [tell me](http://contact).
+All in all, I hope that this new site will hand you all information you are seeking for. And if you have any suggestions to improve it, just [tell me](/contact/).

@@ -1,7 +1,7 @@
 ---
 title: Slides for my ZF2 router presentation
 date: 2012-10-23 23:57:38 +0200
-tags: [Zend Framework, ZendCon12]
+tags: [Zend Framework, ZendCon, Presentation]
 ---
 
 I've just uploaded the slides for my ZF2 router presentation for those wo are interested in them. You can find them right here on my website:

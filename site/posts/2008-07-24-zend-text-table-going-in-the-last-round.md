@@ -6,5 +6,4 @@ tags: [Zend Framework]
 
 As there's currently not much to do, I'm going to finish Zend_Text_Table soon. From code side of view, it is basically done, just unit tests and documentation are missing yet, then Matthew can promote it to trunk and thus to the 1.6 branch. With some luck it will make it into the RC2 release.
 
-**Update**
-I've just finished the unit tests and documentation, so now it's in Wil's hand if it get's into 1.6 RC2 or not.
+**Update:** I've just finished the unit tests and documentation, so now it's in Wil's hand if it get's into 1.6 RC2 or not.
