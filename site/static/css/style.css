@@ -347,13 +347,20 @@ body > footer .copyright {
     font-size: 24px;
 }
 
-.post > footer ul {
-    float: left;
+.post > footer .published-date {
+    margin-top: 0.5em;
+    margin-bottom: 0;
 }
 
-.post > footer p {
-    float: right;
-    margin: 0 0 0 2em;
+.post > footer .social {
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .post > footer .social {
+        margin-top: 0.5em;
+        text-align: left;
+    }
 }
 
 .post .post-image {

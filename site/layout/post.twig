@@ -9,9 +9,14 @@
             {{ post.content | raw }}
         </section>
 
-        <footer>
-            {% include "layout/partial/tags.twig" with {tags: post.tags} %}
-            <p>Published on <time datetime="{{ post.date | date(constant('DateTime::W3C')) }}" itemprop="datePublished">{{ post.date | localizeddate('full', 'none', 'en-US') }}</time></p>
+        <footer class="row">
+            <div class="col-sm-6">
+                {% include "layout/partial/tags.twig" with {tags: post.tags} %}
+                <p class="published-date">Published on <time datetime="{{ post.date | date(constant('DateTime::W3C')) }}" itemprop="datePublished">{{ post.date | localizeddate('full', 'none', 'en-US') }}</time></p>
+            </div>
+            <div class="col-sm-6 social">
+                <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+            </div>
         </footer>
 
         <div id="disqus_thread"></div>
@@ -30,4 +35,8 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     </article>
+{% endblock %}
+
+{% block inline_script %}
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer></script>
 {% endblock %}
