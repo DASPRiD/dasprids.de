@@ -6,7 +6,7 @@ tags: [Zend Framework, PHP, Best practices]
 ---
 
 # Introduction
-I know it was a long time ago when I wrote [part one](http://www.dasprids.de/blog/2010/03/05/modern-application-design-part-1) of this serial, and I promised many times to write the next chapter. Now I finally found some time to tell you a bit more about modern application design. In this part I'm going to write about the service layer and the model architecture used in my website. As usual, you can find the entire source code in my [SVN repository](http://site.svn.dasprids.de/trunk).
+I know it was a long time ago when I wrote [part one](/blog/2010/03/05/modern-application-design-part-1/) of this serial, and I promised many times to write the next chapter. Now I finally found some time to tell you a bit more about modern application design. In this part I'm going to write about the service layer and the model architecture used in my website. As usual, you can find the entire source code in my [SVN repository](http://site.svn.dasprids.de/trunk).
 
 # General overview
 Everything has to start somewhere, and in programing languages, that usually means some common classes which are used by your entire application. In my website, those common classes classes can be found under */application/library/App*. Concrete implementations of models and services can be found in the appropriate module folders. For now, let's start with something just partly related to both of them.

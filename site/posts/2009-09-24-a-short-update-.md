@@ -15,13 +15,13 @@ Either after the conferences are over, or if I find some time in between, I'm go
 
 Beside all those coding stuff, I'm also going to review a book about PHP Team Development written by Samisa Abeysinghe. This book will help readers explore the process of breaking up complex PHP projects into simple sub-parts. It also introduces them to effective team work using MVC, agile development, source control, testing, bug tracking. If you don't want to wait for the review, you can buy it right here:
 
-[![](http://stuff.dasprids.de/images/PHP-team-development-book.jpg)](http://www.packtpub.com/php-team-development/mid/170909ctr10t?utm_source=dasprids.de&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_000687)
+[![PHP Team Development book](/images/content/posts/2009-09-24-php-team-development-book.jpg)](https://www.packtpub.com/php-team-development/mid/170909ctr10t?utm_source=dasprids.de&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_000687)
 
 [http://www.packtpub.com](http://www.packtpub.com/php-team-development/mid/170909ctr10t?utm_source=dasprids.de&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_000687)
 
 There also another interesting book on that site about Zend Framework 1.8 web application development, which you might want to have a look at:
 
-[![](http://stuff.dasprids.de/images/Zend-framework-1.8-book.jpg)](http://www.packtpub.com/zend-framework-1-8-web-application-development/mid/170909bddiwt?utm_source=dasprids.de&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_000688)
+[![Zend Framework 1.8 book](/images/content/posts/2009-09-24-zend-framework-1-8-book.jpg)](https://www.packtpub.com/zend-framework-1-8-web-application-development/mid/170909bddiwt?utm_source=dasprids.de&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_000688)
 
 [http://www.packtpub.com](http://www.packtpub.com/zend-framework-1-8-web-application-development/mid/170909bddiwt?utm_source=dasprids.de&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_000688)
 

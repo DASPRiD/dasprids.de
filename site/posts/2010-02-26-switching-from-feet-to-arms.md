@@ -11,7 +11,7 @@ After some considerations, and earning some money with my new job, I decided to 
 
 When I came home, I directly moved to my desk and prepared for the installation. Removing the feet was pretty easy, and following the manual was so as well. But after a few minutes I should notice that the 200x100 adapter rails didn't fit on my monitors, so I removed them and tried to call the Ergotron support, which was unsuccessful. Luckily my monitors support the 100x100 mount as well and I could proceed with the installation. An hour later, both monitors were mounted at my desk and in place:
 
-[![Ergotron monitor setup](http://farm3.static.flickr.com/2732/4388062172_1a84b2f5e0.jpg)](http://www.flickr.com/photos/30771817@N06/sets/72157623507910462/)
+[![Ergotron monitor setup](https://farm3.static.flickr.com/2732/4388062172_1a84b2f5e0.jpg)](https://www.flickr.com/photos/30771817@N06/sets/72157623507910462/)
 
 # Conclusion
 The arms are easy to install and you can even mount them to your desk with 30" monitors installed, tho it would be easier if another guy can help. I have a lot of space on my desk now, which was taken by the feet prior. Now I also can turn around the monitors to my bed in an extended way, so that I can watch movies from there. Additionally, I can also get the monitors closer to the couch when I have visitors and want to show them something or if we want to watch a movie together.

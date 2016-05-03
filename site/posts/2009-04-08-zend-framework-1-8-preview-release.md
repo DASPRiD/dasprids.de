@@ -11,7 +11,7 @@ The major two components in this release are [Zend_Tool](http://framework.zend.c
 
 Zend_Application itself is a component for managing the bootstrapping, which includes several features like resource, initialization methods, depency checking and so on. The preview release does not contain all resources which will be shipped with the final release, so there is for example no router resource at the moment. Thanks to [Matthew Weier o'Phinney](http://weierophinney.net/) at this point for supporting me so heavily in the development of this component and taking off some work from me like all unit tests and most of the documentation.
 
-Another feature of mine which made it into the PR are translation-aware routes, which I described in an [earlier blog post](http://www.dasprids.de/blog/2009/04/01/translated-segments-for-standard-route).
+Another feature of mine which made it into the PR are translation-aware routes, which I described in an [earlier blog post](/blog/2009/04/01/translated-segments-for-standard-route/).
 
 Zend_Tag (and its sub-component Zend_Tag_Cloud) didn't made it into the PR tho, as the entire documentation is still missing. But since it is completly done and all unit tests are working, you can check it out from the [incubator](http://framework.zend.com/svn/framework/standard/incubator/) and test/use it, if you like.
 
