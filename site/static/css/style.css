@@ -288,6 +288,10 @@ body > .content > .container {
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
 }
 
+.page > section h1 {
+    font-size: 24px;
+}
+
 /* Footer */
 body > footer {
     background-color: #313130;

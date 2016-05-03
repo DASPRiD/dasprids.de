@@ -1,0 +1,22 @@
+{% extends 'layout/default.twig' %}
+
+{% block title %}Contact{% endblock %}
+{% block content %}
+    <article class="page" itemscope itemtype="http://schema.org/ContactPage">
+        <h1 class="page-header" itemprop="name">Contact</h1>
+
+        <section>
+            {% filter markdown|raw %}
+While I had a lot different messengers in the past, I have them down a to just a few. The most common ways to reach me
+nowadays are these:
+
+- E-Mail: [mail@dasprids.de](mail@dasprids.de)
+- Telegram: <a href="#" data-encoded-url="aHR0cHM6Ly90ZWxlZ3JhbS5tZS9EQVNQUmlE">DASPRiD</a>
+- Google+: [BenScholzen](https://plus.google.com/+BenScholzen)
+
+If you are on IRC, you can also find me under the nickname "DASPRiD" on both [Freenode](irc://chat.freenode.net) and
+[FurNet](irc://irc.furnet.org).
+            {% endfilter %}
+        </section>
+    </article>
+{% endblock %}

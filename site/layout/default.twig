@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ page.title }} - DASPRiD's</title>
+        <title>{% block title %}{% endblock %} - DASPRiD's</title>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/obsidian.min.css">
@@ -40,9 +40,10 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li{% if page.url == '/' %} class="active"{% endif %}><a href="/">Home</a></li>
-                        <li{% if page.url starts with '/blog/' %} class="active"{% endif %}><a href="/blog/">Blog</a></li>
-                        <li{% if page.url == '/about/' %} class="active"{% endif %}><a href="/about/">About</a></li>
+                        <li{% if url == '/' %} class="active"{% endif %}><a href="/">Home</a></li>
+                        <li{% if url starts with '/blog/' %} class="active"{% endif %}><a href="/blog/">Blog</a></li>
+                        <li{% if url == '/about/' %} class="active"{% endif %}><a href="/about/">About</a></li>
+                        <li{% if url == '/contact/' %} class="active"{% endif %}><a href="/contact/">Contact</a></li>
                     </ul>
                 </div>
           </div>

@@ -1,0 +1,60 @@
+{% extends 'layout/default.twig' %}
+
+{% block title %}About myself{% endblock %}
+{% block content %}
+    <article class="page" itemscope itemtype="http://schema.org/AboutPage">
+        <h1 class="page-header" itemprop="name">About myself</h1>
+
+        <section>
+            {% filter markdown|raw %}
+# General
+My name is Ben Scholzen, on the internet mostly known by my nickname "DASPRiD". I was born in 1986 in Engelskirchen,
+Germany, and grew up in Bonn.
+
+I'm a passionated programmer, with my first experiences reaching back till I was seven.
+I was always very enthusiastic about any computer topic, so my parents gave me a lot of freedom when it came to that. I
+got my first computer when I was six, and quickly grew an interest in creating my own programs.
+
+In my spare time I like to try out lots of different stuff. I like to go out with my DSLR and shoot photos, take a ride
+on my bike to enjoy the weather or go to conventions. Since 2013, I'm also quite active in the
+[furry fandom](https://en.wikipedia.org/wiki/Furry_fandom).
+
+# Career
+After I finished my secondary school leaving certificate in 2004, I moved to Karlsruhe for
+an apprenticeship at [MARTES NEW MEDIA](http://www.martes.de/) as media designer. I passed my final exam in 2007 and
+kept working for the company for about half a year.
+
+After that, I started working for a tiny company of a good friend for a while, which was also the first time I could
+work completely remotely. After two years, we both decided that it was time to move on, and so I started working for a
+local games company, [Gameforge Productions GmbH](http://gameforge.de/), in which I had an awesome with many great
+people.
+
+At some point I started to feel the need for more indepence in my life, and thus I decided to found my own company,
+named by my website, in 2011. I had quite a rough start, but I managed to bite through all problems and kept going. I'm
+in business for several years now, and worked with many great companies in this time, the two major ones being
+[Roave](https://roave.com/) and [Soliant Consulting](http://www.soliantconsulting.com/).
+
+# Open source work
+Somewhere around 2005 I started to get really involved in workign on open source projects. Initially, it were just my
+own little libraries which I published on my website, but later I joined the [Zend Framework](http://zendframework.com/)
+and quickly became a core contributor. Most of efforts went into it at that time, before I started publishing more
+independent libraries directly through my [GitHub profile](https://github.com/DASPRiD).
+
+Today, there is almost no code anymore which I don't release in some form or another. The only exception to that is of
+course paid work of which I'm not allowed to release. But even there, some clients like to contribute to open source
+projects as well, in which case everyone benefits from it.
+
+# Meaning of my nickname
+People keep asking me about the meaning of my nickname. To be honest, there is no meaning, it was just a rather random
+choice. Well okay, not totally random. As very few people may know, I started with the nickname "Shephard" in my
+childhood and later changed it to "Dark Predator". If I remember correctly, "Shephard" was a character in Half Life,
+and "Dark Predator" simply formed because I liked the color black and the movie Predator at that time.
+
+Anyway, around the year 2000 or so I decided that it was time for another nickname change. Back then I was in a gaming
+clan with the two leaders named "DASGiB" and "DASKAjA". During a night session we brainstormed a few new ideas for a
+nickname, and one of the suggestions was "DASPRiD", based on the earlier nickname. Since I liked that choice, I sticked
+with it.
+            {% endfilter %}
+        </section>
+    </article>
+{% endblock %}

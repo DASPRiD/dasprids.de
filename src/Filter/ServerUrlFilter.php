@@ -15,7 +15,7 @@ class ServerUrlFilter
         $this->url = rtrim($url, '/');
     }
 
-    public function __invoke($url)
+    public function __invoke($url) : string
     {
         return $this->url . '/' . ltrim($url, '/');
     }

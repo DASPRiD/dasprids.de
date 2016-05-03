@@ -16,6 +16,7 @@ return [
 
     'twig' => [
         'filters' => [
+            'markdown' => Staphp\Filter\MarkdownFilter::class,
             'rss' => Staphp\Filter\RssFilter::class,
             'serverurl' => Staphp\Filter\ServerUrlFilter::class,
         ],
@@ -36,6 +37,7 @@ return [
             Twig_Environment::class => Staphp\Factory\TwigEnvironmentFactory::class,
         ],
         'invokables' => [
+            Staphp\Filter\MarkdownFilter::class => Staphp\Filter\MarkdownFilter::class,
             Staphp\Paginator\Paginator::class => Staphp\Paginator\Paginator::class,
         ],
     ],

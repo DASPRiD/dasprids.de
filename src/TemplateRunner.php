@@ -41,6 +41,8 @@ class TemplateRunner
             mkdir($targetDirectory, 0755, true);
         }
 
+        $variables += ['url' => $targetUrl];
+
         file_put_contents($targetPath, $this->twig->render($templatePath, $variables));
 
         if ($this->paginator->hasPagination()) {

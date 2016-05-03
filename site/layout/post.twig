@@ -1,5 +1,6 @@
 {% extends 'layout/blog.twig' %}
 
+{% block title %}{{ post.title }} - Blog{% endblock %}
 {% block blog_content %}
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <h1 class="page-header" itemprop="name headline">{{ post.title }}</h1>

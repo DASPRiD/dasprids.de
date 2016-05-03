@@ -28,8 +28,13 @@ class RssFilter
         $this->author = $author;
     }
 
-    public function __invoke(PostCollection $posts, string $title, string $description, string $link, string $feedLink)
-    {
+    public function __invoke(
+        PostCollection $posts,
+        string $title,
+        string $description,
+        string $link,
+        string $feedLink
+    ) : string {
         $feed = new Feed();
         $feed->setTitle($title);
         $feed->setLink($link);
