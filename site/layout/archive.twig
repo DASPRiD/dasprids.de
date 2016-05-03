@@ -1,6 +1,9 @@
 {% extends 'layout/blog.twig' %}
 
 {% block title %}Posts from {{ year.year }} - Blog{% endblock %}
+{% block head %}
+    <meta name="robots" content="noindex,follow">
+{% endblock %}
 {% block blog_content %}
     <section itemscope itemtype="http://schema.org/Blog">
         <h1 class="page-header" itemprop="name">Posts from {{ year.year }}</h1>
