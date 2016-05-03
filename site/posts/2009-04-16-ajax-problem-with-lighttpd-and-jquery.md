@@ -1,7 +1,7 @@
 ---
 title: AJAX problem with Lighttpd and jQuery
 date: 2009-04-16 17:22:00 +0200
-tags: [JavaScript, Lighttpd]
+tags: [JavaScript, Webserver]
 ---
 
 While converting the environment of one of my business projects from Apache to Lighttpd, I experienced a problem, which didn't occur with Apache before. The following code worked fine in Aapache:
