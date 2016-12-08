@@ -1,0 +1,98 @@
+{% extends 'layout/default.twig' %}
+
+{% block title %}Résumé of Ben Scholzen{% endblock %}
+{% block content %}
+    <article class="page" itemscope itemtype="http://schema.org/ProfilePage">
+        <h1 class="page-header" itemprop="name">Résumé of Ben Scholzen</h1>
+
+        <section class="resume">
+            {% filter markdown|raw %}
+# Skills
+
+Languages
+:   PHP 5 / 7, Python, XML, JavaScript, SQL, HTML5, CSS3
+
+Databases
+:   MySQL, SQLite
+
+Frameworks
+:   Zend Framework 1, 2 and 3, Doctrine 2, jQuery
+
+Web Servers
+:   Apache, Lighttpd, Nginx
+
+Operating Systems
+:   Debian, Ubuntu
+
+Version Control
+:   Git, Subversion
+
+# Education
+
+November 2013
+:   Zend Framework 2 Certified Architect
+
+November 2013
+:   Zend Certified PHP Engineer
+
+October 2011
+:   Zend Certified Engineer: PHP 5.3
+
+September 2008
+:   Zend Certified Engineer: PHP 5
+
+August 2008
+:   Zend Certified Engineer: Zend Framework
+
+# Recommendations
+
+## July 2013: Jeremiah Small
+Directory of Engineering at Soliant Consulting
+
+> We have had Ben on two project teams in the last few months, and intend to continue working with him. His experience
+> as a ZF2 core contributor is extremely valuable on our ZF2 projects. In general, Ben is a fast and efficient
+> developer. If he has questions about requirements, he is very good about identifying those and asking for
+> clarification *before* tackling a task. When he accepts a task, I have high confidence that it will come back
+> complete. Ben has a friendly cooperative attitude, making him a pleasant addition to any development team.
+
+## May 2013: Roger Jacques
+Self Employed
+
+> I've worked with many programmers over the years, and every once in a while you run into someone of Ben's caliber.
+> Ben was the architect and lead programmer on a Zend Framework 2 project of ours, and I was truly amazed at his
+> abilities. Ben is not only extremely knowledgeable on ZF2, he is extremely fast at coding tasks, and when Ben
+> delivers code, it just works. Ben is the type of coder that seems to be able to do the work of multiple other team
+> members. I cannot recommend Ben highly enough.
+
+## March 2011: Matthew Weier O'Phinney
+Project Lead at Zend Technologies
+
+> Ben is a detail-oriented developer, capable of taking a design and implementing it with clean code, full testing, and
+> documentation. He communicates well, both initiating and participating in discussions. As a contributor to Zend
+> Framework, he has been instrumental in driving forward several community initiatives, including the Zend_Application
+> component and participating on the Community Review Team.
+
+## June 2009: Thomas Weidner
+Core Developer at Zend Technologies
+
+> Ben is a very talented IT professional. His ideas are always interesting and usefull and he is also very fast at their
+> integration. I've worked with him since several months and it was always a pleasure. When you need something to be
+> done... ask him :-)
+
+## April 2009: Ryan Mauger
+Developer at Lupimedia
+
+> Ben has proposed, and contributed a great deal to the Zend Framework, and has an incredible understanding of the
+> underlying foundations of the framework. He also writes very clear, easy to read code, of a very high standard. His
+> knowledge of PHP is almost inhuman!
+
+## February 2008: Wil Sinclair
+Manager at Zend Technologies
+
+> As the manager of the Zend Framework project, I can endorse Ben whole-heartedly for his development skills and
+> productivity. He is an important core contributor to the project and is currently working on a component that will
+> dramatically improve ZF.
+            {% endfilter %}
+        </section>
+    </article>
+{% endblock %}

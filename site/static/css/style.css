@@ -32,6 +32,12 @@ body > header {
     border-bottom: 1px solid #000000;
 }
 
+@media print {
+    body > header {
+        display: none;
+    }
+}
+
 body > header:before {
     content: '';
     position: absolute;
@@ -493,4 +499,26 @@ img.about-photo {
     .page [class^='col-'] > h1:first-child {
         margin-top: 0;
     }
+}
+
+/* Resume */
+.resume dl > dt {
+    clear: left;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 160px;
+}
+
+.resume dl > dt:after {
+    content: ': …………………………………………………………………………………………………………………………………';
+}
+
+.resume dl > dd {
+    margin-left: 165px;
+}
+
+.resume h2 {
+    font-size: 16px;
+    font-weight: bold;
 }

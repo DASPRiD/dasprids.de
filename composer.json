@@ -17,7 +17,8 @@
         "zendframework/zend-servicemanager": "^3.0",
         "zendframework/zend-feed": "^2.7",
         "erusev/parsedown": "^1.6",
-        "ramsey/uuid": "^3.4"
+        "ramsey/uuid": "^3.4",
+        "erusev/parsedown-extra": "^0.7.1"
     },
     "autoload": {
         "psr-4": {
